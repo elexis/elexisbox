@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: ElexisBox Application
+Bundle-SymbolicName: eb.core.app
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: eb.core.app.Activator
+Bundle-Vendor: elexis.info
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Import-Package: javax.inject;version="1.0.0",
+ javax.ws.rs;version="2.0.0",
+ javax.ws.rs.core;version="2.0.0",
+ org.osgi.framework;version="1.8.0"
+Service-Component: OSGI-INF/*.xml
+Export-Package: eb.core.app.rest
+Require-Bundle: eb.core.shared;bundle-version="1.0.0"
